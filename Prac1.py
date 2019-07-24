@@ -53,16 +53,13 @@ def decrement(channel):
 GPIO.add_event_detect(button_up, GPIO.FALLING, callback=increment, bouncetime=200)
 GPIO.add_event_detect(button_down, GPIO.FALLING, callback=decrement, bouncetime=200)
 
-# Logic that you write
-def main():
-    y = 3
 
 # Only run the functions if 
 if __name__ == "__main__":
     # Make sure the GPIO is stopped correctly
     try:
         while True:
-            main() 
+            pass 
     except KeyboardInterrupt:
         print("Exiting gracefully")
         # Turn off your GPIOs here
