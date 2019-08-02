@@ -19,6 +19,7 @@ led_3 = 24 #physical pin 18
 button_up = 27 #physical pin 13
 button_down = 22 #physical pin 15
 
+#setup GPIO: IN for LEDs, IN for buttons
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(led_1, GPIO.OUT)
 GPIO.setup(led_2, GPIO.OUT)
@@ -59,12 +60,12 @@ def updateLEDs():
     GPIO.output(led_2, int(values[x][1]))
     GPIO.output(led_3, int(values[x][2]))
 
-# Only run the functions if 
+# Only run the functions if
 if __name__ == "__main__":
     # Make sure the GPIO is stopped correctly
     try:
         while True:
-            pass 
+            pass
     except KeyboardInterrupt:
         print("Exiting gracefully")
         # Turn off your GPIOs here
