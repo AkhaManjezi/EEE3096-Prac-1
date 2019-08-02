@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 """
-Python Practical Template
-Keegan Crankshaw
-Readjust this Docstring as follows:
 Names: Akha Manjezi
 Student Number: MNJSIN002
 Prac: 1
